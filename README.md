@@ -57,4 +57,4 @@ AllowOverride All
 
 ## Tutorial:
 
-A complete tutorial here ...
+A complete tutorial can be found here https://docs.dhtmlx.com/scheduler/desktop__howtostart_php.html
