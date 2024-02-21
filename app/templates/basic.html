@@ -4,7 +4,7 @@
     <title> Getting started with dhtmlxScheduler - Basic</title>
       <meta charset="utf-8">
        <script src="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.js"></script>
-       <link href="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler_material.css"
+       <link href="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.css"
             rel="stylesheet" type="text/css" charset="utf-8">
         <style>
             html, body{
@@ -32,12 +32,12 @@
             <div class="dhx_cal_data"></div>
         </div>
         <script>
-            scheduler.config.xml_date="%Y-%m-%d %H:%i";
+            scheduler.config.parse_date="%Y-%m-%d %H:%i";
             scheduler.init("scheduler_here", new Date(2019,0,20), "week");
             scheduler.setLoadMode("day");
             scheduler.load("/events", "json");
 
-            var dp = new dataProcessor("/events");
+            const dp = new scheduler.DataProcessor("/events");
             dp.init(scheduler);
             dp.setTransactionMode("REST"); // use to transfer data with REST
         </script>
