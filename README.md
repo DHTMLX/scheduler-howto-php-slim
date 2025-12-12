@@ -24,7 +24,7 @@ $ cd ./scheduler-howto-slim
 $ mysql -uuser -ppass scheduler < mysql_dump.sql
 ```
 
-* update the db connection settings in server.js
+* update the db connection settings in app/settings.php
 * install dependencies using composer
 ```
 $ composer install
